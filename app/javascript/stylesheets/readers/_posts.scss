@@ -1,0 +1,38 @@
+.readers.home.index {
+  .alert{
+    margin: 0;
+  }
+  .notice{
+    margin: 0;
+  }
+  .post-card {
+    height: 500px;
+    .header-image{
+      height: 230px;
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.readers.posts.show {
+  .alert{
+    margin: 0;
+  }
+  .notice{
+    margin: 0;
+  }
+  .post-card {
+    .header-image{
+      height: 350px;
+      background-size: cover;
+      background-position: center;
+    }
+    .image-element {
+      text-align: center;
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+}

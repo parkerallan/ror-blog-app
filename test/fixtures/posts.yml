@@ -1,0 +1,37 @@
+# == Schema Information
+#
+# Table name: posts
+#
+#  id           :integer          not null, primary key
+#  description  :text
+#  published    :boolean
+#  published_at :datetime
+#  slug         :string
+#  title        :string
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
+#  author_id    :integer          not null
+#
+# Indexes
+#
+#  index_posts_on_author_id  (author_id)
+#  index_posts_on_slug       (slug) UNIQUE
+#
+# Foreign Keys
+#
+#  author_id  (author_id => authors.id)
+#
+
+one:
+  title: MyString
+  description: MyText
+  published: false
+  published_at: 2021-07-17 14:18:12
+  author: one
+
+two:
+  title: MyString
+  description: MyText
+  published: false
+  published_at: 2021-07-17 14:18:12
+  author: two
